@@ -1,0 +1,466 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+html{
+    height: 690px;
+    width: 100%;
+}
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    height: 200px;
+    width: 100%;
+}
+
+
+
+#encabezado{
+    width: 100%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: 15% 65% 20%;
+    grid-template-rows: 40% 60%;
+    grid-template-areas:  "logo nombre socialMedia"
+                          "logo nombre direccion";
+
+}
+
+.sectionsLinks{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+#linksNav a{
+    width: 100%;
+    height: 100%;
+    background-color:rgb(112, 30, 112);      
+    color: rgb(2, 31, 29);
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+
+#linksNav a:hover{
+    background-color: goldenrod;
+    justify-content:flex-start;
+    padding-left: 10%;
+}
+main{
+    width: 100%;
+    height: 390px;
+    background-color: orangered;
+    background-image:url(../images/torno.jpg) ;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+#descMain{
+    background-color: rgb(197, 74, 74);
+    width: 100%;
+    height: 100%;
+    background-image:url(../images/torno.jpg) ;
+    background-size: cover;
+    opacity:initial;
+}
+#mainContact{
+    background-color: rgb(197, 74, 74);
+    width: 60%;
+    height: 100%;
+    
+    display: grid;
+    grid-template-rows: 80% 20%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:"map     form"
+                        "address form";
+    justify-content: center;
+    align-content: center;
+}
+
+#map{
+    width: 100%;
+    height: 100%;
+    background-color: mediumspringgreen;
+    grid-area: map;
+    justify-self: center;
+    align-self: center;
+}
+#map iframe{
+    width: 80%;
+    height: 80%;
+    justify-self:center;
+    align-self: center;
+    padding-left: 10%;
+    padding-top: 10%;
+}
+#dirContact{
+    background-color: rgb(165, 58, 46);
+    grid-area:address;
+    display: flex;
+    flex-direction: column;
+    justify-items:flex-end ;
+    justify-content: center;
+    align-content: flex-end;
+}
+
+
+#logo{
+    background-color: green;     
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20%;
+    font-size: smaller;
+
+}
+#contactForm{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column; 
+    align-content:center;
+    justify-content: center;
+    grid-area: form;
+    background-color: olivedrab;
+}
+
+
+#botonera{
+    padding-left: 20%;
+}
+#contactForm label{
+    font-style:italic;
+    font-weight: bold;
+    color: rgb(12, 44, 134);
+    justify-self: right;
+}
+#contactForm input{
+    justify-self:normal;
+    padding-left: 25%;
+}
+
+#logo img{
+    width: 50%;
+    height: 70%;
+    position: relative;
+    margin: 10% 25% 10% 25%;
+
+}
+#razonSocial{
+    background-color: red;       
+    grid-area: nombre;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+#razonSocial h1{
+    size: 400%;
+    color: white;
+}
+
+footer{
+    height: 100px;
+    width: 100%;
+    background-color: mediumpurple;
+    display: grid;
+    grid-template-columns: 15% 55% 30%;
+    grid-template-rows: 70% 30%;
+    grid-template-areas:"links map address"
+                        "links map social" ;
+}
+
+.footerLinks{
+    text-decoration: none;
+}
+.menu_footer{
+    list-style-type: none;
+}
+#enlacesFooter{
+    background-color: mediumslateblue;
+    width: 100%;
+    height: 100%;
+    grid-area: links;
+}
+#footerContent{
+    background-color: rgb(48, 149, 180);
+    width: 100%;
+    height: 100%;
+    grid-area: social;
+    display: flex;
+    justify-content: center;
+}
+#footerContent img{
+    width: 20px;
+    height: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+
+#linksFooter{
+    padding-left: 3%;
+    padding-top: 3%;
+    align-content: center;
+}
+#miniMap{
+    background-color:rgb(206, 144, 63) ;
+    width: 100%;
+    height: 100%;
+    grid-area: map;
+    display: flex;
+    justify-content:center;
+    align-content: center;
+}
+#map_frame{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-self:center;
+    align-content: center;
+}
+
+#datosFooter{
+    background-color:rgb(90, 55, 14) ;
+    width: 100%;
+    height: 100%;
+    grid-area: address;   
+    text-align: end;
+    justify-content: center; 
+}
+#linksFooter{
+    background-color: lightblue;
+}
+
+#contactos{
+    background-color: blue;      
+    grid-area: socialMedia ;
+    display:flex;
+    flex-direction:row;
+    justify-items:center;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+
+#contactos img{
+    width: 30%;
+    height: 80%;
+}
+
+#datosHeader{
+    background-color:rgb(182, 153, 209); 
+    grid-area: direccion;
+    text-align:right;
+    padding-top: 5%;
+    padding-right: 10%;
+}
+#datosHeader a{
+    text-decoration: none;
+    color: initial;
+}
+.menu_btn{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+.menu_btn:hover{
+    transition: all 0.5s ;
+    background: goldenrod;
+}
+#home{
+    width: 50%;
+    height: 80%;
+    background-color:coral;      
+    grid-area: home;
+    display: flex;
+    align-self: center;
+}
+#servicios{
+    background-color:aqua;      
+    grid-area: servicios;
+}
+#galeria{
+    background-color:rosybrown;      
+    grid-area: galeria;
+}
+#about{
+    background-color:rgb(230, 118, 118);      
+    grid-area: about;
+}
+
+#contacto{
+    background-color:rgb(110, 197, 107);      
+    grid-area: contacto;
+}
+
+.centrado{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;    
+}
+.radios label{
+    width: 20%;
+    text-align: right;
+}
+
+.radios{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+}
+
+#botonera{
+    width: 30%;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-content: center;
+}
+.form_button{
+    margin-right: 5%;
+    margin-top: 5%;
+    color: maroon;
+    text-align: center;
+    justify-self: center;
+    padding-right: 30%;
+}
+
+#enlaces{
+    height: 50px;
+}
+#enlaces nav{
+    background-color: grey;
+    height:100%;
+}
+
+#linksNav li{
+    list-style-type: none;
+    width: 100%;
+}
+
+#linksNav li:hover{
+    background: goldenrod;
+}
+
+.socialMedia img{
+    width: 10px;
+    height: 10px;
+}
+#linksNav{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 100%;
+    grid-template-areas: "home servicios galeria about contacto";
+}
+
+#opciones{
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 40% 10% 40% 10%;
+    grid-template-areas: "opcion1 radio1 opcion2 radio2";
+}
+#opciones input{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+#opciones label{
+    display:flex;
+    justify-items: flex-start;
+    font-size: smaller;
+    width: 60%;
+}
+#lbl_op1{
+    grid-area: opcion1;
+} 
+#lbl_op2{
+    grid-area: opcion2;
+}
+#tipo_contacto1{
+    grid-area: radio1;
+}
+#tipo_contacto2{
+    grid-area:radio2;
+}
+
+
+@media screen and (max-width:600px){
+    #encabezado{
+        width: 100%;
+        height: 80%;
+        display: grid;
+        grid-template-columns: 15% 65% 20%;
+        grid-template-rows: 40% 60%;
+        grid-template-areas:  "logo nombre nombre"
+                              "logo direccion socialMedia";
+    }
+    #mainContact{
+        width: 100%;
+    }
+    #map iframe{
+        width: 100%;
+        height: 100%;
+        padding: 0px 0px 0px 0px;
+    }
+    #opciones{
+        display: grid;
+        grid-template-rows: 50% 50%;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: "opcion1 radio1"
+                             "opcion2 radio2";
+    }
+    #opciones input{
+        display: flex;
+        width: 20%;
+        justify-content: flex-start;
+    }
+    #opciones label{
+        display:flex;
+        text-align: right;
+        font-size: smaller;
+        width: 80%;
+    }
+    #lbl_op1{
+        grid-area: opcion1;
+    } 
+    #lbl_op2{
+        grid-area: opcion2;
+    }
+    #tipo_contacto1{
+        grid-area: radio1;
+    }
+    #tipo_contacto2{
+        grid-area:radio2;
+    }
+
+    }
+}

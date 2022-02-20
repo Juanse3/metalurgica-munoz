@@ -4,50 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>..::: EMT Quilmes :::..</title>
 </head>
 <body>
     <header>
-        <div id="encabezado">
+        <div id="Encabezado">
             <div id="logo">
-                <a href="index.html"><img src="images/gear.jpg" alt="gear"></a>
+                <a href="index.html"><img src="../images/gear.jpg" alt="gear"></a>
             </div>
             <div id="razonSocial">
                 <h1 >Establecimiento Metalúrgico Talleres</h1>
             </div>
-            <div id="contactos" class="socialMedia">
+            <div id="contactos">
+                <div class="socialMedia">
                     <a href="mailto:consultas@emtsh.com.ar">
-                        <img src="images/envelope.png" alt="sendMail">
+                        <img src="../images/envelope.png" alt="sendMail">
                     </a>
                     <a href="https://www.facebook.com/" target="_blank">
-                        <img src="images/fb.jpg" alt="facebook">
+                        <img src="../images/fb.jpg" alt="facebook">
                     </a>
                     <a href="https://www.instagram.com" target="_blank">
-                        <img src="images/ig.jpg" alt="instagram">
+                        <img src="../images/ig.jpg" alt="instagram">
                     </a>
-            </div>
-            <div id="datosHeader">
-                <p>Av. Calchaquí 1480</p>
-                <p>Quilmes, Buenos Aires - CP: 1878</p>
-                <a href="mailto:contacto@emtsh.com.ar"><p id="email">contacto@emtsh.com.ar</p></a>
+                </div>
+                <div id="datosHeader">
+                    <p>Av. Calchaquí 1480</p>
+                    <p>Quilmes, Buenos Aires - CP: 1878</p>
+                    <a href="mailto:contacto@emtsh.com.ar"><p id="email">contacto@emtsh.com.ar</p></a>
+                </div>
             </div>
         </div>
-        <div id="enlaces">
+        <div id="Enlaces">
             <nav>
                 <ul id="linksNav">
-                    <li class="menu_btn" id="home">     <a class="sectionLinks" href="index.html">HOME</a></li>
-                    <li class="menu_btn" id="servicios"><a class="sectionLinks" href="html/services.html">Servicios</a></li>
-                    <li class="menu_btn" id="galeria">  <a class="sectionLinks" href="html/gallery.html">Galeria</a></li>
-                    <li class="menu_btn" id="about">    <a class="sectionLinks" href="html/about.html">Nosotros</a></li>
-                    <li class="menu_btn" id="contacto"> <a class="sectionLinks" href="html/contact.html">Contactenos</a></li>
+                    <li><a class="sectionLinks" href="../index.html">HOME</a></li>
+                    <li><a class="sectionLinks" href="../html/services.html">Servicios</a></li>
+                    <li><a class="sectionLinks" href="../html/gallery.html">Galeria</a></li>
+                    <li><a class="sectionLinks" href="../html/about.html">Nosotros</a></li>
+                    <li><a class="sectionLinks" href="../html/contact.html">Contactenos</a></li>
                 </ul>
             </nav>
         </div>
+        
     </header>
     <main>
-        <div  id="descMain">
-            <p>MAIN</p>                
+        
+        <div id="main">
+            <p>CONTACTO</p>
+            <form id="contactForm">  
+                <label>Nombre : </label>  
+                <input type="text" id="nombre" name="nombre"/>   
+                <label>mail: </label>  
+                <input type="text" id="email" name="email"/>
+                <input type="radio" id="tipo_contacto1" name="presupuesto" value="presupuesto"/>Presupuesto
+                <input type="radio" id="tipo_contacto2" name="presupuesto" value="consulta"/>Consulta
+                <textarea rows="3" cols="30">Pedido de Consulta/Presupuesto</textarea>  
+                <input type="submit" value="Enviar">  
+                <input type="reset">
+             </form>  
         </div>
     </main>
     <footer>

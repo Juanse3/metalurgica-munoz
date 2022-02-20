@@ -1,0 +1,17 @@
+<main>
+        
+        <div id="main">
+            <p>CONTACTO</p>
+            <form id="contactForm">  
+                <label>Nombre : </label>  
+                <input type="text" id="nombre" name="nombre"/>   
+                <label>mail: </label>  
+                <input type="text" id="email" name="email"/>
+                <input type="radio" id="tipo_contacto1" name="presupuesto" value="presupuesto"/>Presupuesto
+                <input type="radio" id="tipo_contacto2" name="presupuesto" value="consulta"/>Consulta
+                <textarea rows="3" cols="30">Pedido de Consulta/Presupuesto</textarea>  
+                <input type="submit" value="Enviar">  
+                <input type="reset">
+             </form>  
+        </div>
+    </main>

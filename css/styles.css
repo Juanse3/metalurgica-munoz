@@ -1,0 +1,19 @@
+ul.linkspaginas{
+    list-style-type: none;
+}
+
+header{
+    background-color: dodgerblue;
+}
+#contenido{
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;    
+}
+
+footer{
+    background-color: dodgerblue;
+}
+h1.RazonSocial{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: ghostwhite;
+}
