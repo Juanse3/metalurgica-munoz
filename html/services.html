@@ -4,20 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles1.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>..::: EMT Quilmes :::..</title>
 </head>
-<body id="bodyGallery">
+<body>
     <header>
-        <div id="Encabezado">
+        <div id="encabezado">
             <div id="logo">
-                <a href="index.html"><img src="../images/gear.jpg" alt="gear"></a>
+                <a href="../index.html"><img src="../images/gear.jpg" alt="gear"></a>
             </div>
             <div id="razonSocial">
                 <h1 >Establecimiento Metalúrgico Talleres</h1>
             </div>
-            <div id="contactos">
-                <div class="socialMedia">
+            <div id="contactos" class="socialMedia">
                     <a href="mailto:consultas@emtsh.com.ar">
                         <img src="../images/envelope.png" alt="sendMail">
                     </a>
@@ -27,77 +26,99 @@
                     <a href="https://www.instagram.com" target="_blank">
                         <img src="../images/ig.jpg" alt="instagram">
                     </a>
-                </div>
-                <div id="datosHeader">
-                    <p>Av. Calchaquí 1480</p>
-                    <p>Quilmes, Buenos Aires - CP: 1878</p>
-                    <a href="mailto:contacto@emtsh.com.ar"><p id="email">contacto@emtsh.com.ar</p></a>
-                </div>
+            </div>
+            <div id="datosHeader">
+                <p>Av. Calchaquí 1480</p>
+                <p>Quilmes, Buenos Aires - CP: 1878</p>
+                <a href="mailto:contacto@emtsh.com.ar"><p id="email">contacto@emtsh.com.ar</p></a>
             </div>
         </div>
-        <div id="Enlaces">
+        <div id="enlaces">
             <nav>
                 <ul id="linksNav">
-                    <li><a class="sectionLinks" href="../index.html">HOME</a></li>
-                    <li><a class="sectionLinks" href="../html/services.html">Servicios</a></li>
-                    <li><a class="sectionLinks" href="../html/gallery.html">Galeria</a></li>
-                    <li><a class="sectionLinks" href="../html/about.html">Nosotros</a></li>
-                    <li><a class="sectionLinks" href="../html/contact.html">Contactenos</a></li>
+                    <li class="menu_btn" id="home">     <a class="sectionLinks" href="../index.html">HOME</a></li>
+                    <li class="menu_btn" id="servicios"><a class="sectionLinks" href="services.html">Servicios</a></li>
+                    <li class="menu_btn" id="galeria">  <a class="sectionLinks" href="gallery.html">Galeria</a></li>
+                    <li class="menu_btn" id="about">    <a class="sectionLinks" href="about.html">Nosotros</a></li>
+                    <li class="menu_btn" id="contacto"> <a class="sectionLinks" href="contact.html">Contactenos</a></li>
                 </ul>
             </nav>
         </div>
-        
     </header>
-    <main>
+    <main id="mainServicios">
         <div id="services">
-            <div class="serviceRow">
-                <img src="../images/galeria4.jpeg" alt="servicio 1">
-                <p>
+            <div id="servicio1" class="serviceRow">
+                <div id="servicio_pic1" class="service_pics">
+                    <img src="../images/galeria4.jpeg" alt="servicio 1">
+                </div>
+                <div id="servicio_desc1" class="service_desc">
+                    <p>
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione facere officiis debitis est mollitia sit consequuntur corrupti beatae numquam nobis possimus provident obcaecati nostrum neque, perspiciatis dolorem! Consectetur, fugiat ipsum!
-                </p>
+                    </p>
+                    <div id="sm_service1"class="see_more">VER MAS</div>
+                </div>
             </div>
-            <div class="serviceRow">
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione facere officiis debitis est mollitia sit consequuntur corrupti beatae numquam nobis possimus provident obcaecati nostrum neque, perspiciatis dolorem! Consectetur, fugiat ipsum!
-                </p>
-                <img src="../images/galeria4.jpeg" alt="servicio 2">
+            <div id="servicio2" class="serviceRow">
+                <div id="servicio_desc2" class="service_desc">
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione facere officiis debitis est mollitia sit consequuntur corrupti beatae numquam nobis possimus provident obcaecati nostrum neque, perspiciatis dolorem! Consectetur, fugiat ipsum!
+                    </p>
+                </div>
+                <div id="servicio_pic2" class="service_pics">
+                    <img src="../images/galeria4.jpeg" alt="servicio 2">
+                </div>
             </div>
-            <div class="serviceRow">
-                <img src="../images/galeria4.jpeg" alt="servicio 3">
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione facere officiis debitis est mollitia sit consequuntur corrupti beatae numquam nobis possimus provident obcaecati nostrum neque, perspiciatis dolorem! Consectetur, fugiat ipsum!
-                </p>
+            <div id="servicio3" class="serviceRow">
+                <div id="servicio_pic3" class="service_pics">
+                    <img src="../images/galeria4.jpeg" alt="servicio 3">
+                </div>
+                <div id="servicio_desc3" class="service_desc">
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione facere officiis debitis est mollitia sit consequuntur corrupti beatae numquam nobis possimus provident obcaecati nostrum neque, perspiciatis dolorem! Consectetur, fugiat ipsum!
+                    </p>
+                </div>
             </div>
-            <div class="serviceRow">
-                
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione facere officiis debitis est mollitia sit consequuntur corrupti beatae numquam nobis possimus provident obcaecati nostrum neque, perspiciatis dolorem! Consectetur, fugiat ipsum!
-                </p>
-                <img src="../images/galeria4.jpeg" alt="servicio 4">
+            <div id="servicio4" class="serviceRow">
+                <div id="servicio_desc4" class="service_desc">
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione facere officiis debitis est mollitia sit consequuntur corrupti beatae numquam nobis possimus provident obcaecati nostrum neque, perspiciatis dolorem! Consectetur, fugiat ipsum!
+                    </p>
+                </div>
+                <div id="servicio_pic4" class="service_pics">
+                    <img src="../images/galeria4.jpeg" alt="servicio 4">
+                </div>
             </div>
         </div>
     </main>
     <footer>
-        <div id="footerContent">
-            <div class="socialMediaFooter">
-                <a href="mailto:consultas@emtsh.com.ar" target="_blank">
-                    <img src="../images/envelope.png" alt="sendMail">
-                </a>
-                <a href="https://www.facebook.com/" target="_blank">
-                    <img src="../images/fb.jpg" alt="facebook">
-                </a>
-                <a href="https://www.instagram.com" target="_blank">
-                    <img src="../images/ig.jpg" alt="instagram">
-                </a>
-            </div>
-
-            <div id="datosFooter">
-                <p>Av. Calchaquí 1480</p>
-                <p>Quilmes, Buenos Aires, CP: 1878</p>
-                <a href="mailto:contacto@emtsh.com.ar"><p>contacto@emtsh.com.ar</p></a>
-            </div>
+        <div id="enlacesFooter">
+            <ul id="linksFooter">
+                <li class="menu_footer" id="footer_home">     <a class="footerLinks" href="index.html">HOME</a></li>
+                <li class="menu_footer" id="footer_servicios"><a class="footerLinks" href="html/services.html">Servicios</a></li>
+                <li class="menu_footer" id="footer_galeria">  <a class="footerLinks" href="html/gallery.html">Galeria</a></li>
+                <li class="menu_footer" id="footer_about">    <a class="footerLinks" href="html/about.html">Nosotros</a></li>
+                <li class="menu_footer" id="footer_contacto"> <a class="footerLinks" href="html/contact.html">Contactenos</a></li>
+            </ul>
         </div>
-        
+        <div id="miniMap">
+            <iframe id="map_frame"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3278.5683847359564!2d-58.29289408483764!3d-34.74127237229615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32dd013cfce07%3A0x28f82a5eff7ddd11!2sAv.%20Calchaqu%C3%AD%201480%2C%20B1879%20Quilmes%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1645236531202!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div id="datosFooter">
+            <p>Av. Calchaquí 1480</p>
+            <p>Quilmes, Buenos Aires, CP: 1878</p>
+            <a href="mailto:contacto@emtsh.com.ar"><p>contacto@emtsh.com.ar</p></a>
+        </div>
+        <div id="footerContent" class="socialMediaFooter">
+            <a href="mailto:consultas@emtsh.com.ar" target="_blank">
+                <img src="../images/envelope.png" alt="sendMail">
+            </a>
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="../images/fb.jpg" alt="facebook">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="../images/ig.jpg" alt="instagram">
+            </a>
+        </div>
     </footer>
 </body>
 </html>
