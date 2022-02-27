@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles1.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css">
     <title>..::: EMT Quilmes :::..</title>
 </head>
-<body id="bodyGallery">
+<body>
     <header>
-        <div id="Encabezado">
+        <div id="encabezado">
             <div id="logo">
-                <a href="index.html"><img src="../images/gear.jpg" alt="gear"></a>
+                <a href="../index.html"><img src="../images/gear.jpg" alt="gear"></a>
             </div>
             <div id="razonSocial">
                 <h1 >Establecimiento Metalúrgico Talleres</h1>
             </div>
-            <div id="contactos">
-                <div class="socialMedia">
+            <div id="contactos" class="socialMedia">
                     <a href="mailto:consultas@emtsh.com.ar">
                         <img src="../images/envelope.png" alt="sendMail">
                     </a>
@@ -27,64 +28,127 @@
                     <a href="https://www.instagram.com" target="_blank">
                         <img src="../images/ig.jpg" alt="instagram">
                     </a>
-                </div>
-                <div id="datosHeader">
-                    <p>Av. Calchaquí 1480</p>
-                    <p>Quilmes, Buenos Aires - CP: 1878</p>
-                    <a href="mailto:contacto@emtsh.com.ar"><p id="email">contacto@emtsh.com.ar</p></a>
-                </div>
+            </div>
+            <div id="datosHeader">
+                <p>Av. Calchaquí 1480</p>
+                <p>Quilmes, Buenos Aires - CP: 1878</p>
+                <a href="mailto:contacto@emtsh.com.ar"><p id="email">contacto@emtsh.com.ar</p></a>
             </div>
         </div>
-        <div id="Enlaces">
-            <nav>
-                <ul id="linksNav">
-                    <li><a class="sectionLinks" href="../index.html">HOME</a></li>
-                    <li><a class="sectionLinks" href="../html/services.html">Servicios</a></li>
-                    <li><a class="sectionLinks" href="../html/gallery.html">Galeria</a></li>
-                    <li><a class="sectionLinks" href="../html/about.html">Nosotros</a></li>
-                    <li><a class="sectionLinks" href="../html/contact.html">Contactenos</a></li>
-                </ul>
-            </nav>
+        <div id="enlaces">
+            <nav id="navbarLinks" class="navbar navbar-expand-lg ">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul id="linksNav" class="navbar-nav mr-auto">
+                    <li class="menu_btn nav-item active">
+                      <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="menu_btn nav-item">
+                      <a class="nav-link" href="services.html">Servicios</a>
+                    </li>
+                    <li class="menu_btn nav-item">
+                        <a class="nav-link" href="gallery.html">Galeria</a>
+                    </li>
+                    <li class="menu_btn nav-item">
+                        <a class="nav-link" href="about.html">Nosotros</a>
+                    </li>
+                    <li class="menu_btn nav-item">
+                        <a class="nav-link" href="contact.html">Contactenos</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
         </div>
-        
     </header>
-    <main>
+    <main id="mainGallery">
         <div id="gallery">
-            <div class="galleryRow">
-                <img src="../images/galeria1j.jpg" alt="galeria 1a">
-                <img src="../images/galeria1j.jpg" alt="galeria 1b">
-            </div>
-            <div class="galleryRow">
-                <img src="../images/galeria2.jpg" alt="galeria 2a">
-                <img src="../images/galeria2.jpg" alt="galeria 2b">
-            </div>
-            <div class="galleryRow">
-                <img src="../images/galeria3.jpg" alt="galeria 3a">
-                <img src="../images/galeria3.jpg" alt="galeria 3b">
-            </div>
+            <div id="imagenes-r1" class="imagenes-row">
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="../images/galeria1j.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dolor consequatur quam. Neque id culpa amet itaque reiciendis impedit, alias aliquid soluta debitis atque nulla earum molestiae ut ex autem?</p>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="../images/galeria2.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias consequuntur sapiente velit distinctio, quidem sed accusamus nesciunt eaque dolorum ipsam sint voluptatum nobis quaerat ratione eos ducimus temporibus eligendi eius?</p>
+                  </div>
+                </div>
+              </div>
+              <div id="imagenes-r2" class="imagenes-row">
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="../images/galeria3.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias consequuntur sapiente velit distinctio, quidem sed accusamus nesciunt eaque dolorum ipsam sint voluptatum nobis quaerat ratione eos ducimus temporibus eligendi eius?</p>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="../images/galeria4.jpeg" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias consequuntur sapiente velit distinctio, quidem sed accusamus nesciunt eaque dolorum ipsam sint voluptatum nobis quaerat ratione eos ducimus temporibus eligendi eius?</p>
+                  </div>
+                </div>
+              </div>
+              <div id="imagenes-r3" class="imagenes-row">
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="../images/galeria3.jpeg" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias consequuntur sapiente velit distinctio, quidem sed accusamus nesciunt eaque dolorum ipsam sint voluptatum nobis quaerat ratione eos ducimus temporibus eligendi eius?</p>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="../images/galeria2.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias consequuntur sapiente velit distinctio, quidem sed accusamus nesciunt eaque dolorum ipsam sint voluptatum nobis quaerat ratione eos ducimus temporibus eligendi eius?</p>
+                  </div>
+                </div>
+              </div>
+              <div id="imagenes-r4" class="imagenes-row">
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="../images/galeria4.jpeg" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias consequuntur sapiente velit distinctio, quidem sed accusamus nesciunt eaque dolorum ipsam sint voluptatum nobis quaerat ratione eos ducimus temporibus eligendi eius?</p>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="../images/galeria1j.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias consequuntur sapiente velit distinctio, quidem sed accusamus nesciunt eaque dolorum ipsam sint voluptatum nobis quaerat ratione eos ducimus temporibus eligendi eius?</p>
+                  </div>
+                </div>
+              </div>
+          
         </div>
     </main>
     <footer>
-        <div id="footerContent">
-            <div class="socialMediaFooter">
-                <a href="mailto:consultas@emtsh.com.ar" target="_blank">
-                    <img src="../images/envelope.png" alt="sendMail">
-                </a>
-                <a href="https://www.facebook.com/" target="_blank">
-                    <img src="../images/fb.jpg" alt="facebook">
-                </a>
-                <a href="https://www.instagram.com" target="_blank">
-                    <img src="../images/ig.jpg" alt="instagram">
-                </a>
-            </div>
-
-            <div id="datosFooter">
-                <p>Av. Calchaquí 1480</p>
-                <p>Quilmes, Buenos Aires, CP: 1878</p>
-                <a href="mailto:contacto@emtsh.com.ar"><p>contacto@emtsh.com.ar</p></a>
-            </div>
+        <div id="enlacesFooter">
+            <ul id="linksFooter">
+                <li class="menu_footer" id="footer_home">     <a class="footerLinks" href="../index.html">HOME</a></li>
+                <li class="menu_footer" id="footer_servicios"><a class="footerLinks" href="services.html">Servicios</a></li>
+                <li class="menu_footer" id="footer_galeria">  <a class="footerLinks" href="gallery.html">Galeria</a></li>
+                <li class="menu_footer" id="footer_about">    <a class="footerLinks" href="about.html">Nosotros</a></li>
+                <li class="menu_footer" id="footer_contacto"> <a class="footerLinks" href="contact.html">Contactenos</a></li>
+            </ul>
         </div>
-        
+        <div id="miniMap">
+            <iframe id="map_frame"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3278.5683847359564!2d-58.29289408483764!3d-34.74127237229615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32dd013cfce07%3A0x28f82a5eff7ddd11!2sAv.%20Calchaqu%C3%AD%201480%2C%20B1879%20Quilmes%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1645236531202!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div id="datosFooter">
+            <p>Av. Calchaquí 1480</p>
+            <p>Quilmes, Buenos Aires, CP: 1878</p>
+            <a href="mailto:contacto@emtsh.com.ar"><p>contacto@emtsh.com.ar</p></a>
+        </div>
+        <div id="footerContent" class="socialMediaFooter">
+            <a href="mailto:consultas@emtsh.com.ar" target="_blank">
+                <img src="../images/envelope.png" alt="sendMail">
+            </a>
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="../images/fb.jpg" alt="facebook">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="../images/ig.jpg" alt="instagram">
+            </a>
+        </div>
     </footer>
 </body>
 </html>

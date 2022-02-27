@@ -2,6 +2,8 @@
     margin: 0;
     border: 0;
     padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 body{
@@ -15,7 +17,9 @@ header{
     width: 100%;
 }
 
-
+#mainGalery{
+    height: auto;
+}
 
 #encabezado{
     width: 100%;
@@ -38,7 +42,6 @@ header{
 #linksNav a{
     width: 100%;
     height: 100%;
-    background-color:rgb(112, 30, 112);      
     color: rgb(2, 31, 29);
     text-decoration: none;
     display: flex;
@@ -137,12 +140,12 @@ header{
 
 #linksNav a:hover{
     transition: all 0.5s;
-    background: linear-gradient(to left,rgb(112,30,112),goldenrod);
-    padding-right: 70%;
+    background: linear-gradient(to left,blueviolet,goldenrod);
+    padding-right: 50%;
 }
 main{
     width: 100%;
-    height: 390px;
+    height: auto;
     background-color: orangered;
     background-image:url(../images/torno.jpg) ;
     object-fit: cover;
@@ -221,6 +224,17 @@ main{
                         "address form";
     justify-content: center;
     align-content: center;
+}
+
+#datosHeader p{
+    font-size:xx-small;
+    width: 80%;
+    height: 10%;
+}
+
+#datosHeader a{
+
+    height: 10%;
 }
 
 #map{
@@ -409,10 +423,9 @@ footer{
 
 #datosHeader{
     background-color:rgb(182, 153, 209); 
+    width: 100%;
     grid-area: direccion;
-    text-align:right;
-    padding-top: 5%;
-    padding-right: 10%;
+    display: block;
 }
 #datosHeader a{
     text-decoration: none;
@@ -498,7 +511,10 @@ footer{
     background-color: grey;
     height:100%;
 }
-
+#navbarLinks{
+    height: 100%;
+    background-color: blueviolet;
+}
 #linksNav li{
     list-style-type: none;
     width: 100%;
@@ -601,6 +617,29 @@ footer{
     #tipo_contacto2{
         grid-area:radio2;
     }
-
-    }
 }
+
+
+
+#navbarSupportedContent{
+    width: 100%;
+    height: 100%;
+}
+#navbarLinks{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0;    
+}
+.imagenes-row{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: space-evenly;
+    overflow-x: auto;
+    
+}
+.text-responsive {
+    font-size: calc(10px + 1vw + 1vh);
+  }
