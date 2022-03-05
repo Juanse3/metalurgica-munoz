@@ -163,35 +163,34 @@ main{
     position: relative;
     overflow: hidden;
     width: 70%;
-    height: 0;
+    height: 500px;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
   
-#carrusel {
-    width: 100%;
-    animation: carrusel 5s linear infinite;
-  }
 
-#carrusel img {
-    display: inline-block;
+#descMain img {
+    height:80%;
     width: 100%;
+
 }
   
-  @keyframes carousel {
+  @keyframes carrusel {
     0%,
     23% {
       transform: translate3d(0,0,0);
     }
     25%,
     48% {
-      transform: translate3d(-25%,0,0);
+      transform: translate3d(-100%,0,0);
     }
     50%,
     73% {
-      transform: translate3d(-50%,0,0);
+      transform: translate3d(-200%,0,0);
     }
     75%,
     98% {
-      transform: translate3d(-75%,0,0);
+      transform: translate3d(-300%,0,0);
     }
     100% {
       transform: translate3d(0,0,0);
@@ -199,19 +198,6 @@ main{
   }
 
 
-@keyframes carrousel{
-    0%{
-        transform: rotateY(360deg) translate(-25%); 
-         
-    }
-    50%{
-        transform: rotateY(360deg) translate(25%);
-    }
-    100%{
-        transform: rotateY(360deg);
-    }
-
-}
 #mainContact{
     background-color: rgb(197, 74, 74);
     width: 60%;
@@ -347,6 +333,7 @@ footer{
 }
 .menu_footer{
     list-style-type: none;
+    font-size: 1rem;
 }
 #enlacesFooter{
     background-color: mediumslateblue;
@@ -371,9 +358,11 @@ footer{
 
 
 #linksFooter{
-    padding-left: 3%;
-    padding-top: 3%;
     align-content: center;
+}
+
+#linksFooter a{
+    font-size: smaller;
 }
 #miniMap{
     background-color:rgb(206, 144, 63) ;
