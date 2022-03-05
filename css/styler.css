@@ -1,0 +1,527 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0; }
+
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column; }
+
+header {
+  height: 200px;
+  width: 100%; }
+
+#mainGalery {
+  height: auto; }
+
+#encabezado {
+  width: 100%;
+  height: 80%;
+  display: grid;
+  grid-template-columns: 15% 65% 20%;
+  grid-template-rows: 40% 60%;
+  grid-template-areas: "logo nombre socialMedia" "logo nombre direccion"; }
+
+.sectionsLinks {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around; }
+
+.serviceRow {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center; }
+  .serviceRow:hover {
+    transition: all 1s ease-in-out;
+    transform: scale(1.25) rotateX(360deg);
+    background: #3acc0e; }
+
+#services {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center; }
+
+.service_pics {
+  width: 50%;
+  height: 100%;
+  justify-self: center;
+  align-self: center;
+  background-color: orange; }
+  .service_pics img {
+    width: 100%;
+    height: 100%; }
+
+.service_desc {
+  width: 50%;
+  height: 100%;
+  justify-self: center;
+  align-self: center;
+  background-color: #3acc0e;
+  text-overflow: clip; }
+  .service_desc p {
+    word-wrap: break-word; }
+
+.see_more {
+  color: white;
+  background: purple;
+  width: 100%;
+  display: flex;
+  justify-content: space-around; }
+
+#servicio_pic1 {
+  background-color: orchid; }
+
+#servicio_pic2 {
+  background-color: peru; }
+
+#servicio_pic3 {
+  grid-area: pic3; }
+
+#servicio_pic4 {
+  grid-area: pic4; }
+
+#servicio_desc1 {
+  grid-area: desc1; }
+
+#servicio_desc2 {
+  grid-area: desc2; }
+
+#servicio_desc3 {
+  grid-area: desc3; }
+
+#servicio_desc4 {
+  grid-area: desc4; }
+
+main {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  background-image: url(../images/torno.jpg);
+  object-fit: cover;
+  display: flex;
+  justify-content: center; }
+
+#mainServicios {
+  height: auto; }
+
+#descMain {
+  background-color: white;
+  background-image: url(../images/torno.jpg);
+  background-size: cover;
+  opacity: initial;
+  position: relative;
+  overflow: hidden;
+  width: 70%;
+  height: 500px;
+  margin-top: 2%;
+  margin-bottom: 2%; }
+  #descMain img {
+    height: 80%;
+    width: 100%; }
+
+@keyframes carrusel {
+  0%,
+  23% {
+    transform: translate3d(0, 0, 0); }
+  25%,
+  48% {
+    transform: translate3d(-100%, 0, 0); }
+  50%,
+  73% {
+    transform: translate3d(-200%, 0, 0); }
+  75%,
+  98% {
+    transform: translate3d(-300%, 0, 0); }
+  100% {
+    transform: translate3d(0, 0, 0); } }
+
+#mainContact {
+  background-color: white;
+  width: 60%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 80% 20%;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "map     form" "address form";
+  justify-content: center;
+  align-content: center; }
+
+#map {
+  width: 100%;
+  height: 100%;
+  background-color: mediumspringgreen;
+  grid-area: map;
+  justify-self: center;
+  align-self: center; }
+
+#map iframe {
+  width: 80%;
+  height: 80%;
+  justify-self: center;
+  align-self: center;
+  padding-left: 10%;
+  padding-top: 10%; }
+
+#dirContact {
+  background-color: #56d1f7;
+  grid-area: address;
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-end;
+  justify-content: center;
+  align-content: flex-end; }
+
+#logo {
+  background-color: #56d1f7;
+  grid-area: logo;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+form {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20%;
+  font-size: smaller; }
+
+#contactForm {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  grid-area: form;
+  background-color: olivedrab; }
+
+#botonera {
+  padding-left: 20%; }
+
+#contactForm label {
+  font-style: italic;
+  font-weight: bold;
+  color: #0c2c86;
+  justify-self: right; }
+
+#contactForm input {
+  justify-self: normal;
+  padding-left: 25%; }
+
+#logo img {
+  width: 50%;
+  height: 70%;
+  position: relative;
+  margin: 10% 25% 10% 25%; }
+
+#logo img:hover {
+  transition: all 1s;
+  transform: rotate(360deg); }
+
+#razonSocial {
+  background-color: #56d1f7;
+  grid-area: nombre;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%; }
+  #razonSocial h1 {
+    size: 400%;
+    color: rgba(221, 212, 212, 0.911); }
+
+footer {
+  height: 100px;
+  width: 100%;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 15% 55% 30%;
+  grid-template-rows: 70% 30%;
+  grid-template-areas: "links map address" "links map social"; }
+
+.footerLinks {
+  text-decoration: none; }
+
+.menu_footer {
+  list-style-type: none;
+  font-size: 1rem; }
+
+#enlacesFooter {
+  background-color: #56d1f7;
+  width: 100%;
+  height: 100%;
+  grid-area: links; }
+
+#footerContent {
+  background-color: #56d1f7;
+  width: 100%;
+  height: 100%;
+  grid-area: social;
+  display: flex;
+  justify-content: center; }
+  #footerContent img {
+    width: 20px;
+    height: 20px;
+    padding-left: 10%;
+    padding-right: 10%; }
+
+#linksFooter {
+  align-content: center; }
+  #linksFooter a {
+    font-size: smaller; }
+
+#miniMap {
+  background-color: #56d1f7;
+  width: 100%;
+  height: 100%;
+  grid-area: map;
+  display: flex;
+  justify-content: center;
+  align-content: center; }
+
+#map_frame {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-self: center;
+  align-content: center; }
+
+#datosFooter {
+  background-color: #56d1f7;
+  width: 100%;
+  height: 100%;
+  grid-area: address;
+  text-align: end;
+  justify-content: center; }
+
+#linksFooter {
+  background-color: lightblue; }
+
+#contactos {
+  background-color: #56d1f7;
+  grid-area: socialMedia;
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%; }
+  #contactos img {
+    width: 30%;
+    height: 80%; }
+
+#datosHeader {
+  background-color: #56d1f7;
+  width: 100%;
+  grid-area: direccion;
+  display: block; }
+  #datosHeader a {
+    text-decoration: none;
+    color: initial;
+    height: 10%; }
+  #datosHeader p {
+    font-size: xx-small;
+    width: 80%;
+    height: 10%; }
+
+.menu_btn {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-self: center;
+  justify-content: center; }
+
+#home {
+  width: 50%;
+  height: 80%;
+  background-color: #56d1f7;
+  grid-area: home;
+  display: flex;
+  align-self: center; }
+
+#servicios {
+  background-color: #56d1f7;
+  grid-area: servicios; }
+
+#galeria {
+  background-color: #56d1f7;
+  grid-area: galeria; }
+
+#about {
+  background-color: #56d1f7;
+  grid-area: about; }
+
+#contacto {
+  background-color: #6ec56b;
+  grid-area: contacto; }
+
+.centrado {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+
+.radios {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-around; }
+  .radios label {
+    width: 20%;
+    text-align: right; }
+
+#botonera {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center; }
+
+.form_button {
+  margin-right: 5%;
+  margin-top: 5%;
+  color: maroon;
+  text-align: center;
+  justify-self: center;
+  padding-right: 30%; }
+
+#enlaces {
+  height: 50px; }
+  #enlaces nav {
+    background-color: grey;
+    height: 100%; }
+
+#navbarLinks {
+  height: 100%;
+  background-color: blueviolet; }
+
+.socialMedia img {
+  width: 10px;
+  height: 10px; }
+
+#linksNav {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 100%;
+  grid-template-areas: "home servicios galeria about contacto"; }
+  #linksNav li {
+    list-style-type: none;
+    width: 100%; }
+  #linksNav li:hover {
+    background: goldenrod; }
+  #linksNav a {
+    width: 100%;
+    height: 100%;
+    color: #021f1d;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+  #linksNav a:hover {
+    transition: all 0.5s;
+    background: linear-gradient(to left, blueviolet, goldenrod);
+    padding-right: 50%; }
+
+#opciones {
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 40% 10% 40% 10%;
+  grid-template-areas: "opcion1 radio1 opcion2 radio2"; }
+  #opciones input {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center; }
+  #opciones label {
+    display: flex;
+    justify-items: flex-start;
+    font-size: smaller;
+    width: 60%; }
+
+#lbl_op1 {
+  grid-area: opcion1; }
+
+#lbl_op2 {
+  grid-area: opcion2; }
+
+#tipo_contacto1 {
+  grid-area: radio1; }
+
+#tipo_contacto2 {
+  grid-area: radio2; }
+
+@media screen and (max-width: 600px) {
+  #encabezado {
+    width: 100%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: 15% 65% 20%;
+    grid-template-rows: 40% 60%;
+    grid-template-areas: "logo nombre nombre" "logo direccion socialMedia"; }
+  #mainContact {
+    width: 100%; }
+  #map iframe {
+    width: 100%;
+    height: 100%;
+    padding: 0px 0px 0px 0px; }
+  #opciones {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "opcion1 radio1" "opcion2 radio2"; }
+    #opciones input {
+      display: flex;
+      width: 20%;
+      justify-content: flex-start; }
+    #opciones label {
+      display: flex;
+      text-align: right;
+      font-size: smaller;
+      width: 80%; }
+  #lbl_op1 {
+    grid-area: opcion1; }
+  #lbl_op2 {
+    grid-area: opcion2; }
+  #tipo_contacto1 {
+    grid-area: radio1; }
+  #tipo_contacto2 {
+    grid-area: radio2; } }
+
+#navbarSupportedContent {
+  width: 100%;
+  height: 100%; }
+
+#navbarLinks {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  border: 0; }
+
+.imagenes-row {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  justify-content: space-evenly;
+  overflow-x: auto; }
+
+.text-responsive {
+  font-size: calc(10px + 1vw + 1vh); }
