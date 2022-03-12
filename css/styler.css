@@ -5,15 +5,21 @@
   margin-top: 0;
   margin-bottom: 0; }
 
-body {
+.fullsize, body, header, .service_pics img, #map, #contactForm, #razonSocial, #enlacesFooter, #footerContent, #miniMap, #datosFooter, #contactos, #linksNav, #linksNav a, #opciones input, #navbarSupportedContent, #navbarLinks {
   width: 100%;
-  height: 100%;
+  height: 100%; }
+
+.centered_self, .service_pics, .service_desc, #map, #map iframe {
+  justify-self: center;
+  align-self: center; }
+
+body {
   display: flex;
   flex-direction: column; }
 
 header {
-  height: 200px;
-  width: 100%; }
+  width: 100%;
+  height: 200px; }
 
 #mainGalery {
   height: auto; }
@@ -31,14 +37,16 @@ header {
   display: flex;
   justify-content: space-around; }
 
-.serviceRow {
-  width: 80%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.centered_items, .serviceRow, #services {
   justify-items: center;
   align-items: center; }
+
+.serviceRow {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
   .serviceRow:hover {
     transition: all 1s ease-in-out;
     transform: scale(1.25) rotateX(360deg);
@@ -49,25 +57,16 @@ header {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  justify-items: center;
-  align-items: center; }
+  justify-content: space-between; }
 
 .service_pics {
   width: 50%;
   height: 100%;
-  justify-self: center;
-  align-self: center;
   background-color: orange; }
-  .service_pics img {
-    width: 100%;
-    height: 100%; }
 
 .service_desc {
   width: 50%;
   height: 100%;
-  justify-self: center;
-  align-self: center;
   background-color: #3acc0e;
   text-overflow: clip; }
   .service_desc p {
@@ -128,8 +127,8 @@ main {
   margin-top: 2%;
   margin-bottom: 2%; }
   #descMain img {
-    height: 80%;
-    width: 100%; }
+    width: 100%;
+    height: 80%; }
 
 @keyframes carrusel {
   0%,
@@ -159,18 +158,12 @@ main {
   align-content: center; }
 
 #map {
-  width: 100%;
-  height: 100%;
   background-color: mediumspringgreen;
-  grid-area: map;
-  justify-self: center;
-  align-self: center; }
+  grid-area: map; }
 
 #map iframe {
   width: 80%;
   height: 80%;
-  justify-self: center;
-  align-self: center;
   padding-left: 10%;
   padding-top: 10%; }
 
@@ -198,8 +191,6 @@ form {
   font-size: smaller; }
 
 #contactForm {
-  width: 100%;
-  height: 100%;
   justify-content: center;
   display: flex;
   flex-direction: column;
@@ -236,16 +227,14 @@ form {
   grid-area: nombre;
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%; }
+  justify-content: center; }
   #razonSocial h1 {
     size: 400%;
     color: rgba(221, 212, 212, 0.911); }
 
 footer {
-  height: 100px;
   width: 100%;
+  height: 100px;
   background-color: white;
   display: grid;
   grid-template-columns: 15% 55% 30%;
@@ -261,14 +250,10 @@ footer {
 
 #enlacesFooter {
   background-color: #56d1f7;
-  width: 100%;
-  height: 100%;
   grid-area: links; }
 
 #footerContent {
   background-color: #56d1f7;
-  width: 100%;
-  height: 100%;
   grid-area: social;
   display: flex;
   justify-content: center; }
@@ -285,8 +270,6 @@ footer {
 
 #miniMap {
   background-color: #56d1f7;
-  width: 100%;
-  height: 100%;
   grid-area: map;
   display: flex;
   justify-content: center;
@@ -301,8 +284,6 @@ footer {
 
 #datosFooter {
   background-color: #56d1f7;
-  width: 100%;
-  height: 100%;
   grid-area: address;
   text-align: end;
   justify-content: center; }
@@ -317,9 +298,7 @@ footer {
   flex-direction: row;
   justify-items: center;
   align-items: center;
-  justify-content: space-around;
-  width: 100%;
-  height: 100%; }
+  justify-content: space-around; }
   #contactos img {
     width: 30%;
     height: 80%; }
@@ -416,8 +395,6 @@ footer {
   height: 10px; }
 
 #linksNav {
-  height: 100%;
-  width: 100%;
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
   grid-template-rows: 100%;
@@ -428,8 +405,6 @@ footer {
   #linksNav li:hover {
     background: goldenrod; }
   #linksNav a {
-    width: 100%;
-    height: 100%;
     color: #021f1d;
     text-decoration: none;
     display: flex;
@@ -447,8 +422,6 @@ footer {
   grid-template-areas: "opcion1 radio1 opcion2 radio2"; }
   #opciones input {
     display: flex;
-    width: 100%;
-    height: 100%;
     justify-content: center; }
   #opciones label {
     display: flex;
@@ -505,13 +478,7 @@ footer {
   #tipo_contacto2 {
     grid-area: radio2; } }
 
-#navbarSupportedContent {
-  width: 100%;
-  height: 100%; }
-
 #navbarLinks {
-  width: 100%;
-  height: 100%;
   padding: 0;
   margin: 0;
   border: 0; }

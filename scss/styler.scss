@@ -8,16 +8,33 @@
     margin-bottom: 0;
 }
 
-body{
+.fullsize{
     width: $fullPercentage;
     height: $fullPercentage;
-    display: flex;
-    flex-direction: column;
+}
+.centered_self{
+    justify-self:center;
+    align-self: center;
+}
+
+
+@mixin setSize ($set_width,$set_height){
+    width: $set_width;
+    height: $set_height;
+}
+@mixin setflex($selected_direction:column){
+    display:flex;
+    flex-direction: $selected_direction;
+}
+
+body{
+    @extend .fullsize;
+    @include setflex();
 }
 
 header{
-    height: 200px;
-    width: $fullPercentage;
+    @include setSize($fullPercentage,200px);
+    @extend .fullsize;
 }
 
 #mainGalery{
@@ -25,14 +42,12 @@ header{
 }
 
 #encabezado{
-    width: $fullPercentage;
-    height: 80%;
+    @include setSize($fullPercentage,$fullPercentage*0.8);
     display: grid;
     grid-template-columns: 15% 65% 20%;
     grid-template-rows: 40% 60%;
     grid-template-areas:  "logo nombre socialMedia"
                           "logo nombre direccion";
-
 }
 
 .sectionsLinks{
@@ -40,15 +55,15 @@ header{
     display: flex;
     justify-content: space-around;
 }
-
-.serviceRow{
-    width: 80%;
-    height: $fullPercentage;
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
+.centered_items{
     justify-items: center;
     align-items:center ;
+}
+.serviceRow{
+    @include setSize($fullPercentage, $fullPercentage*0.8);
+    @include setflex(row);
+    justify-content:space-between;
+    @extend .centered_items;
     &:hover{
         transition: all 1s ease-in-out;
         transform: scale(1.25) rotateX(360deg);
@@ -57,32 +72,24 @@ header{
 }
 
 #services{
-    width: $fullPercentage*0.8;
-    height: $fullPercentage;
-    display: flex;
-    flex-direction: column;
+    @include setSize($fullPercentage*0.8,$fullPercentage);
+    @include setflex();
     justify-content:space-between;
-    justify-items: center;
-    align-items:center ;
+    @extend .centered_items;
 }
 
 .service_pics{
-    width: 50%;
-    height: $fullPercentage;
-    justify-self:center ;
-    align-self: center;
+    @include setSize($fullPercentage*0.5,$fullPercentage);
+    @extend .centered_self;
     background-color: orange;
     img{
-        width: $fullPercentage;
-        height: $fullPercentage;
+        @extend .fullsize;
     }
 }
 
 .service_desc{
-    width: 50%;
-    height: $fullPercentage;
-    justify-self:center;
-    align-self: center;
+    @include setSize($fullPercentage*0.5,$fullPercentage);
+    @extend .centered_self;
     background-color: rgb(58, 204, 14);
     text-overflow: clip;
     p{
@@ -144,13 +151,11 @@ main{
     opacity:initial;
     position: relative;
     overflow: hidden;
-    width: 70%;
-    height: 500px;
+    @include setSize($fullPercentage*0.7,500px);
     margin-top: 2%;
     margin-bottom: 2%;
     img {
-        height:80%;
-        width: $fullPercentage;  
+        @include setSize($fullPercentage,$fullPercentage*0.8);
     }
 }
 
@@ -178,9 +183,7 @@ main{
 
 #mainContact{
     background-color: $colorBackground;
-    width: 60%;
-    height: $fullPercentage;
-    
+    @include setSize($fullPercentage*0.6, $fullPercentage);
     display: grid;
     grid-template-rows: 80% 20%;
     grid-template-columns: 50% 50%;
@@ -191,31 +194,25 @@ main{
 }
 
 #map{
-    width: $fullPercentage;
-    height: $fullPercentage;
+    @extend .fullsize;
     background-color: mediumspringgreen;
     grid-area: map;
-    justify-self: center;
-    align-self: center;
+    @extend .centered_self;
 }
 #map iframe{
-    width: 80%;
-    height: 80%;
-    justify-self:center;
-    align-self: center;
+    @include setSize($fullPercentage*0.8, $fullPercentage*0.8);
+    @extend .centered_self;
     padding-left: 10%;
     padding-top: 10%;
 }
 #dirContact{
     background-color: $colorHeaderBack;
     grid-area:address;
-    display: flex;
-    flex-direction: column;
+    @include setflex();
     justify-items:flex-end ;
     justify-content: center;
     align-content: flex-end;
 }
-
 
 #logo{
     background-color: $colorHeaderBack;     
@@ -226,24 +223,20 @@ main{
 }
 form{
     width: 60%;
-    display: flex;
-    flex-direction: column;
+    @include setflex();
     padding-left: 20%;
     font-size: smaller;
 
 }
 #contactForm{
-    width: $fullPercentage;
-    height: $fullPercentage;
+    @extend .fullsize;
     justify-content: center;
-    display: flex;
-    flex-direction: column; 
+    @include setflex();
     align-content:center;
     justify-content: center;
     grid-area: form;
     background-color: olivedrab;
 }
-
 
 #botonera{
     padding-left: 20%;
@@ -260,8 +253,7 @@ form{
 }
 
 #logo img{
-    width: 50%;
-    height: 70%;
+    @include setSize($fullPercentage*0.5, $fullPercentage*0.7);
     position: relative;
     margin: 10% 25% 10% 25%;
 }
@@ -276,17 +268,15 @@ form{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: $fullPercentage;
-    height: $fullPercentage;
+    @extend .fullsize;
     h1{
         size: 400%;
-    color: $colorFontName;
+        color: $colorFontName;
     }
 }
 
 footer{
-    height: 100px;
-    width: $fullPercentage;
+    @include setSize($fullPercentage, 100px);
     background-color: $colorBackground;
     display: grid;
     grid-template-columns: 15% 55% 30%;
@@ -304,20 +294,17 @@ footer{
 }
 #enlacesFooter{
     background-color: $colorHeaderBack;
-    width: $fullPercentage;
-    height: $fullPercentage;
+    @extend .fullsize;
     grid-area: links;
 }
 #footerContent{
     background-color: $colorHeaderBack;
-    width: $fullPercentage;
-    height: $fullPercentage;
+    @extend .fullsize;   
     grid-area: social;
     display: flex;
     justify-content: center;
     img{
-        width: 20px;
-        height: 20px;
+        @include setSize(20px, 20px);
         padding-left: 10%;
         padding-right: 10%;
     }
@@ -332,16 +319,14 @@ footer{
 
 #miniMap{
     background-color:$colorHeaderBack;
-    width: $fullPercentage;
-    height: $fullPercentage;
+    @extend .fullsize;
     grid-area: map;
     display: flex;
     justify-content:center;
     align-content: center;
 }
 #map_frame{
-    width: 50%;
-    height: $fullPercentage;
+    @include setSize($fullPercentage*0.5, $fullPercentage);
     display: flex;
     justify-self:center;
     align-content: center;
@@ -349,8 +334,7 @@ footer{
 
 #datosFooter{
     background-color:$colorHeaderBack;
-    width: $fullPercentage;
-    height: $fullPercentage;
+    @extend .fullsize;
     grid-area: address;   
     text-align: end;
     justify-content: center; 
@@ -361,17 +345,14 @@ footer{
 
 #contactos{
     background-color: $colorHeaderBack;      
-    grid-area: socialMedia ;
-    display:flex;
-    flex-direction:row;
+    grid-area: socialMedia;
+    @include setflex(row);
     justify-items:center;
     align-items: center;
     justify-content: space-around;
-    width: $fullPercentage;
-    height: $fullPercentage;
+    @extend .fullsize;
     img{
-        width: 30%;
-        height: 80%;
+        @include setSize($fullPercentage*0.3, $fullPercentage*0.8);
     }
 }
 
@@ -387,57 +368,52 @@ footer{
     }
     p{
         font-size:xx-small;
-        width: 80%;
-        height: 10%;
+        @include setSize($fullPercentage*0.8, $fullPercentage*0.1);
     }
 }
 
 .menu_btn{
-    width: $fullPercentage;
-    height: 80%;
+    @include setSize($fullPercentage, $fullPercentage*0.8);
     display: flex;
     align-self: center;
     justify-content: center;
 }
 
 #home{
-    width: 50%;
-    height: 80%;
+    @include setSize($fullPercentage*0.5, $fullPercentage*0.8);
     background-color:$colorHeaderBack;      
     grid-area: home;
     display: flex;
     align-self: center;
 }
+@mixin set_grid_and_bkcolor($grid_name,$bkColor:$colorHeaderBack){
+    background-color:$bkColor;      
+    grid-area: $grid_name;
+}
 #servicios{
-    background-color:$colorHeaderBack;      
-    grid-area: servicios;
+    @include set_grid_and_bkcolor(servicios);
 }
 #galeria{
-    background-color:$colorHeaderBack;      
-    grid-area: galeria;
+    @include set_grid_and_bkcolor(galeria);
 }
 #about{
-    background-color:$colorHeaderBack;      
-    grid-area: about;
+    @include set_grid_and_bkcolor(about);
 }
 
 #contacto{
-    background-color:rgb(110, 197, 107);      
-    grid-area: contacto;
+    @include set_grid_and_bkcolor(contacto,rgb(110, 197, 107));
 }
 
 .centrado{
     text-align: center;
-    display: flex;
-    flex-direction: column;
+    @include setflex();
     justify-content: space-around;    
 }
 
 .radios{
     margin-top: 1%;
     margin-bottom: 1%;
-    display: flex;
-    flex-direction: row;
+    @include setflex(row);
     align-content: center;
     justify-content: space-around;
     label{
@@ -448,8 +424,7 @@ footer{
 
 #botonera{
     width: 30%;
-    display:flex;
-    flex-direction: row;
+    @include setflex(row);
     justify-content:space-between;
     align-content: center;
 }
@@ -477,13 +452,11 @@ footer{
 
 .socialMedia {
     img{
-        width: 10px;
-        height: 10px;
+        @include setSize(10px, 10px);
     }
 }
 #linksNav{
-    height: $fullPercentage;
-    width: $fullPercentage;
+    @extend .fullsize;
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
     grid-template-rows: $fullPercentage;
@@ -497,8 +470,7 @@ footer{
         background: goldenrod;
     }
     a{
-        width: $fullPercentage;
-        height: $fullPercentage;
+        @extend .fullsize;
         color: rgb(2, 31, 29);
         text-decoration: none;
         display: flex;
@@ -519,8 +491,7 @@ footer{
     grid-template-areas: "opcion1 radio1 opcion2 radio2";
     input{
         display: flex;
-        width: $fullPercentage;
-        height: $fullPercentage;
+        @extend .fullsize;
         justify-content: center;
     }
     label{
@@ -547,8 +518,7 @@ footer{
 
 @media screen and (max-width:600px){
     #encabezado{
-        width: $fullPercentage;
-        height: 80%;
+        @include setSize($fullPercentage, $fullPercentage*0.8);
         display: grid;
         grid-template-columns: 15% 65% 20%;
         grid-template-rows: 40% 60%;
@@ -559,8 +529,7 @@ footer{
         width: $fullPercentage;
     }
     #map iframe{
-        width: $fullPercentage;
-        height: $fullPercentage;
+        @include setSize($fullPercentage,$fullPercentage);
         padding: 0px 0px 0px 0px;
     }
     #opciones{
@@ -597,19 +566,16 @@ footer{
 }
 
 #navbarSupportedContent{
-    width: $fullPercentage;
-    height: $fullPercentage;
+    @extend .fullsize;
 }
 #navbarLinks{
-    width: $fullPercentage;
-    height: $fullPercentage;
+    @extend .fullsize;
     padding: 0;
     margin: 0;
     border: 0;    
 }
 .imagenes-row{
-    display: flex;
-    flex-direction: row;
+    @include setflex(row);
     justify-items: center;
     justify-content: space-evenly;
     overflow-x: auto; 
