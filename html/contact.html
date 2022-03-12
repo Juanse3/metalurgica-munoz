@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/styler.css">
+    <meta name="keywords" content="CNC, metalurgica, mecanizado, torneria, rectificado, reparaciones">
+    <meta name="description" content="Empresa metalúrgica familiar. 58 años de experiencia a su servicio. Fabricacamos lo que necesita">
     <title>..::: EMT Quilmes :::..</title>
 </head>
 <body>
     <header>
         <div id="encabezado">
             <div id="logo">
-                <a href="../index.html"><img src="../images/gear.jpg" alt="gear"></a>
+                <a href="index.html"><img src="../images/gear.jpg" alt="gear"></a>
             </div>
             <div id="razonSocial">
                 <h1 >Establecimiento Metalúrgico Talleres</h1>
@@ -34,17 +38,30 @@
             </div>
         </div>
         <div id="enlaces">
-            <nav>
-                <ul id="linksNav">
-                    <li class="menu_btn" id="home">     <a class="sectionLinks" href="../index.html">HOME</a></li>
-                    <li class="menu_btn" id="servicios"><a class="sectionLinks" href="services.html">Servicios</a></li>
-                    <li class="menu_btn" id="galeria">  <a class="sectionLinks" href="gallery.html">Galeria</a></li>
-                    <li class="menu_btn" id="about">    <a class="sectionLinks" href="about.html">Nosotros</a></li>
-                    <li class="menu_btn" id="contacto"> <a class="sectionLinks" href="contact.html">Contactenos</a></li>
-                </ul>
-            </nav>
+            <nav id="navbarLinks" class="navbar navbar-expand-lg ">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul id="linksNav" class="navbar-nav mr-auto">
+                    <li class="menu_btn nav-item active">
+                      <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="menu_btn nav-item">
+                      <a class="nav-link" href="services.html">Servicios</a>
+                    </li>
+                    <li class="menu_btn nav-item">
+                        <a class="nav-link" href="gallery.html">Galeria</a>
+                    </li>
+                    <li class="menu_btn nav-item">
+                        <a class="nav-link" href="about.html">Nosotros</a>
+                    </li>
+                    <li class="menu_btn nav-item">
+                        <a class="nav-link" href="contact.html">Contactenos</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
         </div>
     </header>
+
     <main>
         <div id="mainContact">
             <div id="map">
@@ -80,11 +97,11 @@
     <footer>
         <div id="enlacesFooter">
             <ul id="linksFooter">
-                <li class="menu_footer" id="footer_home">     <a class="footerLinks" href="index.html">HOME</a></li>
-                <li class="menu_footer" id="footer_servicios"><a class="footerLinks" href="html/services.html">Servicios</a></li>
-                <li class="menu_footer" id="footer_galeria">  <a class="footerLinks" href="html/gallery.html">Galeria</a></li>
-                <li class="menu_footer" id="footer_about">    <a class="footerLinks" href="html/about.html">Nosotros</a></li>
-                <li class="menu_footer" id="footer_contacto"> <a class="footerLinks" href="html/contact.html">Contactenos</a></li>
+                <li class="menu_footer" id="footer_home">     <a class="footerLinks" href="../index.html">HOME</a></li>
+                <li class="menu_footer" id="footer_servicios"><a class="footerLinks" href="services.html">Servicios</a></li>
+                <li class="menu_footer" id="footer_galeria">  <a class="footerLinks" href="gallery.html">Galeria</a></li>
+                <li class="menu_footer" id="footer_about">    <a class="footerLinks" href="about.html">Nosotros</a></li>
+                <li class="menu_footer" id="footer_contacto"> <a class="footerLinks" href="contact.html">Contactenos</a></li>
             </ul>
         </div>
         <div id="miniMap">
@@ -107,5 +124,6 @@
             </a>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
